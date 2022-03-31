@@ -1,7 +1,10 @@
 package app.teralco.testing.backendtest.glue;
 
+import com.mongodb.util.JSON;
 import com.privalia.qa.specs.*;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.openqa.selenium.By;
@@ -69,4 +72,5 @@ public class CustomStepsDefinition extends BaseGSpec {
                 .then()
                 .statusCode(200);
     }
+
 }

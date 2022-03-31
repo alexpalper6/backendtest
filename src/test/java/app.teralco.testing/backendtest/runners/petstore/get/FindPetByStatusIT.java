@@ -1,7 +1,7 @@
-package app.teralco.testing.backendtest.runners;
+package app.teralco.testing.backendtest.runners.petstore.get;
 
-import io.cucumber.testng.CucumberOptions;
 import com.privalia.qa.utils.BaseGTest;
+import io.cucumber.testng.CucumberOptions;
 
 
 /**
@@ -14,15 +14,15 @@ import com.privalia.qa.utils.BaseGTest;
  * https://cucumber.io/docs/guides/parallel-execution/#testng
  */
 @CucumberOptions(plugin = {
-                "json:target/CucumberRunnerIT.json",
-                "html:target/CucumberRunnerIT.html",
-                "junit:target/CucumberRunnerIT.xml"
+                "json:target/FindPetByStatusIT.json",
+                "html:target/FindPetByStatusIT.html",
+                "junit:target/FindPetByStatusIT.xml"
         }, features =
         {
-                "src/test/resources/features/"
+                "src/test/resources/features/petstore/get/find_pet_by_status.feature"
         },
         glue = "classpath:app.teralco.testing.backendtest.glue")
-public class CucumberRunnerIT extends BaseGTest {
+public class FindPetByStatusIT extends BaseGTest {
 
 
 }
