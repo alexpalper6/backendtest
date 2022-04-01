@@ -6,15 +6,15 @@ Feature: Find Pets by Status
   mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.get.FindPetByStatusIT -Denv=preprod
 
   Scenario Outline: Trying to get a pet from given status from url param
-    Given I securely send requests to '${envProperties:server.url}'
+    Given I securely send requests to '${envProperties:petStore.url}'
     And I set url parameters:
       | <keyParam> | <valueParam> |
     When I send a 'GET' request to '/pet/findByStatus'
-    Then the service response status must be '<response_code>'
+    Then the service response status must be '<responseCode>'
     Then the service response must contain the text '<info>'
 
     Examples:
-      | keyParam | valueParam        | response_code | info      |
+      | keyParam | valueParam        | responseCode  | info      |
       | status   | available         | 200           | available |
       | value    | available         | 400           | error     |
       | status   | 22                | 400           | error     |

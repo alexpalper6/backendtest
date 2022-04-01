@@ -6,7 +6,7 @@ Feature: Find Pet by its ID
   mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.get.FindPetByIdIT -Denv=preprod
 
   Scenario: Getting pet with existent id
-    Given I securely send requests to '${envProperties:server.url}'
+    Given I securely send requests to '${envProperties:petStore.url}'
     When I send a 'GET' request to '/pet/2'
     Then the service response status must be '200'
     And I save element '$' in environment variable 'response'
