@@ -1,8 +1,7 @@
-package app.teralco.testing.backendtest.runners.petstore.post;
+package app.teralco.testing.backendtest.runners.petstore.store.get;
 
 import com.privalia.qa.utils.BaseGTest;
 import io.cucumber.testng.CucumberOptions;
-
 
 /**
  * This is the runner class responsible of running the included *.feature files in the project.
@@ -14,15 +13,13 @@ import io.cucumber.testng.CucumberOptions;
  * https://cucumber.io/docs/guides/parallel-execution/#testng
  */
 @CucumberOptions(plugin = {
-                "json:target/UpdatePetPathIT.json",
-                "html:target/UpdatePetPathIT.html",
-                "junit:target/UpdatePetPathIT.xml"
-        }, features =
+        "json:target/GetPetInventoriesIT.json",
+        "html:target/GetPetInventoriesIT.html",
+        "junit:target/GetPetInventoriesIT.xml"
+}, features =
         {
-                "src/test/resources/features/petstore/post/update_pet_path.feature"
+                "src/test/resources/features/petstore/store/get/get_pet_inventories.feature"
         },
         glue = "classpath:app.teralco.testing.backendtest.glue")
-public class UpdatePetPathIT extends BaseGTest {
-
-
+public class GetPetInventoriesIT  extends BaseGTest {
 }

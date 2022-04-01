@@ -1,4 +1,4 @@
-package app.teralco.testing.backendtest.runners.petstore.post;
+package app.teralco.testing.backendtest.runners.petstore.pet.put;
 
 import com.privalia.qa.utils.BaseGTest;
 import io.cucumber.testng.CucumberOptions;
@@ -14,15 +14,15 @@ import io.cucumber.testng.CucumberOptions;
  * https://cucumber.io/docs/guides/parallel-execution/#testng
  */
 @CucumberOptions(plugin = {
-                "json:target/UploadImageIT.json",
-                "html:target/UploadImageIT.html",
-                "junit:target/UploadImageIT.xml"
+                "json:target/UpdatePetIT.json",
+                "html:target/UpdatePetIT.html",
+                "junit:target/UpdatePetIT.xml"
         }, features =
         {
-                "src/test/resources/features/petstore/post/upload_image.feature"
+                "src/test/resources/features/petstore/put/update_pet.feature"
         },
         glue = "classpath:app.teralco.testing.backendtest.glue")
-public class UploadImageIT extends BaseGTest {
+public class UpdatePetIT extends BaseGTest {
 
 
 }

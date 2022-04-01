@@ -1,4 +1,4 @@
-package app.teralco.testing.backendtest.runners.petstore.get;
+package app.teralco.testing.backendtest.runners.petstore.user.get;
 
 import com.privalia.qa.utils.BaseGTest;
 import io.cucumber.testng.CucumberOptions;
@@ -14,15 +14,15 @@ import io.cucumber.testng.CucumberOptions;
  * https://cucumber.io/docs/guides/parallel-execution/#testng
  */
 @CucumberOptions(plugin = {
-                "json:target/FindPetByIdIT.json",
-                "html:target/FindPetByIdIT.html",
-                "junit:target/FindPetByIdIT.xml"
+                "json:target/GetUserByUsernameIT.json",
+                "html:target/GetUserByUsernameIT.html",
+                "junit:target/GetUserByUsernameIT.xml"
         }, features =
         {
-                "src/test/resources/features/petstore/get/find_pet_by_id.feature"
+                "src/test/resources/features/petstore/user/get/get_user_by_username.feature"
         },
         glue = "classpath:app.teralco.testing.backendtest.glue")
-public class FindPetByIdIT extends BaseGTest {
+public class GetUserByUsernameIT extends BaseGTest {
 
 
 }

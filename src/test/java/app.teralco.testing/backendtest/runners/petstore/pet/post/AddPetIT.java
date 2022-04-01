@@ -1,4 +1,4 @@
-package app.teralco.testing.backendtest.runners.petstore.post;
+package app.teralco.testing.backendtest.runners.petstore.pet.post;
 
 import com.privalia.qa.utils.BaseGTest;
 import io.cucumber.testng.CucumberOptions;

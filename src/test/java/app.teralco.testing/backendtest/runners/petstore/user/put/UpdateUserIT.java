@@ -1,4 +1,4 @@
-package app.teralco.testing.backendtest.runners.petstore.delete;
+package app.teralco.testing.backendtest.runners.petstore.user.put;
 
 import com.privalia.qa.utils.BaseGTest;
 import io.cucumber.testng.CucumberOptions;
@@ -14,15 +14,15 @@ import io.cucumber.testng.CucumberOptions;
  * https://cucumber.io/docs/guides/parallel-execution/#testng
  */
 @CucumberOptions(plugin = {
-                "json:target/DeletePetIT.json",
-                "html:target/DeletePetIT.html",
-                "junit:target/DeletePetIT.xml"
+                "json:target/UpdateUserIT.json",
+                "html:target/UpdateUserIT.html",
+                "junit:target/UpdateUserIT.xml"
         }, features =
         {
-                "src/test/resources/features/petstore/delete/delete_pet.feature"
+                "src/test/resources/features/petstore/user/put/update_user.feature"
         },
         glue = "classpath:app.teralco.testing.backendtest.glue")
-public class DeletePetIT extends BaseGTest {
+public class UpdateUserIT extends BaseGTest {
 
 
 }
