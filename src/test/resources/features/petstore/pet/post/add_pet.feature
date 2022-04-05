@@ -2,7 +2,7 @@
 Feature: Add a new pet to the store
   This feature tests PetStore's endpoint for adding new pets giving a json as the body's data to introduce
   To run this feature use the followin line:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.post.AddPetIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.post.AddPetIT -Denv=preprod
 
   Scenario Outline: Adding a pet with given data
     Given I securely send requests to '${envProperties:petStore.url}'

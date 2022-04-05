@@ -3,7 +3,7 @@ Feature: Uploads an Image
 
   This feature tests against PetStore's endpoint that is used to upload an image on a pet.
   To run this feature use the following command:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.post.UploadImageIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.post.UploadImageIT -Denv=preprod
 
   Scenario Outline: Upload an image on a pet with given id and image
     Given I securely send requests to '${envProperties:petStore.url}'

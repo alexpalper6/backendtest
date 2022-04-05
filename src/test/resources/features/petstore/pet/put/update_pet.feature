@@ -3,7 +3,7 @@ Feature: Updates an existing pet
 
   This feature tests against PetStore's endpoint that is used to update a pet using a json as a body request.
   To run this feature use the following command:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.post.UpdatePetBodyIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.post.UpdatePetBodyIT -Denv=preprod
 
   Scenario: Updating a pet with valid fields
     Given I securely send requests to '${envProperties:petStore.url}'

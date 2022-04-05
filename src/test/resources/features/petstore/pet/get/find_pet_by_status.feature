@@ -3,7 +3,7 @@ Feature: Find Pets by Status
 
   This feature tests against PetStore's GET request for finding pets with a given status.
   You can run this feature with the following line:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.get.FindPetByStatusIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.get.FindPetByStatusIT -Denv=preprod
 
   Scenario Outline: Trying to get a pet from given status from url param
     Given I securely send requests to '${envProperties:petStore.url}'

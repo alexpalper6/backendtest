@@ -3,7 +3,7 @@ Feature: Find Pet by its ID
 
   This feature tests against PetStore's GET request for finding pets with a specific id.
   You can run this test writing in your terminal:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.get.FindPetByIdIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.get.FindPetByIdIT -Denv=preprod
 
   Scenario: Getting pet with existent id
     Given I securely send requests to '${envProperties:petStore.url}'

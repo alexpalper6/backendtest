@@ -3,7 +3,7 @@ Feature: Deletes a pet
 
   This features test against the PetStore's endpoint to delete pets with its id.
   To run this use:
-  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.delete.DeletePetIT -Denv=preprod
+  mvn verify -Dit.test=app.teralco.testing.backendtest.runners.petstore.pet.delete.DeletePetIT -Denv=preprod
 
   Scenario Outline: Deleting pet given an id
     Given I securely send requests to '${envProperties:petStore.url}'
